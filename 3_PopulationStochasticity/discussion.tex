@@ -1,0 +1,23 @@
+\documentclass{article}
+\usepackage[top=2.54cm, bottom=2.54cm, left=2.54cm, right=2.54cm]{geometry}
+\usepackage{graphicx,color,url,amsmath}
+\usepackage{enumerate}
+\setlength{\parskip}{12pt}
+\setlength{\parindent}{0pt}
+\begin{document}
+
+\begin{center} Huilin Tong\\
+ID:1261574
+\end{center}
+
+{\bf Discussion}\\
+\begin{enumerate}
+	\item Yes. Population remains constant each generation.
+	\item With a higher standard deviation, means your data is distributed more randomly. So vital rate also varies a lot. $p=p*(1+r)$, $r$ can more easily get a smaller value. $p$ will reduce more. Which may cause the total population die out more easily.
+	\item It still will die out completely.
+\end{enumerate}
+
+{\bf Extra credit}\\
+
+Population model is as a discrete feedback control system since data is collected each year. For the system, we change the survival rate and birth rate to influence total population size. We can write the relationship of $(n+1)^{th}$ year's population and $n^{th}$ year's population in matrix form with a control matrix consists with $m$ and $p$. This is the Leslie matrix in population model. For such discrete system, largest eigenvalue of control matrix must be inside unit circle to make the system eventually stable. If the largest eigenvalue is $1$, then the system is critical stable. Not sure if this can answer the question.
+\end{document}
